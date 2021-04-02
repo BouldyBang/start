@@ -1,0 +1,7 @@
+C:\Users\Bouldy\source\repos\Практика\Практика\obj\Debug\Практика.csprojAssemblyReference.cache
+C:\Users\Bouldy\source\repos\Практика\Практика\obj\Debug\Практика.csproj.CoreCompileInputs.cache
+C:\Users\Bouldy\source\repos\Практика\Практика\bin\Debug\Практика.exe.config
+C:\Users\Bouldy\source\repos\Практика\Практика\bin\Debug\Практика.exe
+C:\Users\Bouldy\source\repos\Практика\Практика\bin\Debug\Практика.pdb
+C:\Users\Bouldy\source\repos\Практика\Практика\obj\Debug\Практика.exe
+C:\Users\Bouldy\source\repos\Практика\Практика\obj\Debug\Практика.pdb
