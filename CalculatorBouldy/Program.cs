@@ -15,13 +15,13 @@ namespace CalculatorBouldy
         private static string Input { get; set; } = "";
         private const string Reset = "reset";
         private const string End = "end";
-        private static void Start()
+        /*private static void Start()
         {
             IsStart = true;
             Result = 0;
             Number = 0;
             Calc();
-        }
+        }*/
         private static void Calc()
         {
             Input = Console.ReadLine();
@@ -30,10 +30,10 @@ namespace CalculatorBouldy
                 Console.WriteLine("Bye");
                 return;
             }
-            if (string.Equals(Input, Reset, StringComparison.CurrentCultureIgnoreCase))
+            /*if (string.Equals(Input, Reset, StringComparison.CurrentCultureIgnoreCase))
             {
                 Start();
-            }
+            }*/
             if (!double.TryParse(Input, out var numberParse))
             {
                 if (Input != "+" && Input != "-" && Input != "*" && Input != "/")
@@ -43,19 +43,22 @@ namespace CalculatorBouldy
                     return;
                 }
                 IsStart = false;
-                Calc();
                 switch (Input)
                 {
                     case "+":
+                        Calc();
                         Result += Number;
                         break;
                     case "-":
+                        Calc();
                         Result -= Number;
                         break;
                     case "*":
+                        Calc();
                         Result *= Number;
                         break;
                     case "/":
+                        Calc();
                         if (Number == 0)
                         {
                             Console.WriteLine("NaN");
@@ -86,7 +89,7 @@ namespace CalculatorBouldy
         static void Main(string[] args)
         {
             Console.WriteLine("Введите уравнение; \"reset\" чтобы начать заного; \"end\" чтобы закончить");
-            Start();
+            Calc();
             Console.ReadKey();
         }
     }
